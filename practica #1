@@ -1,0 +1,84 @@
+//apartado 1
+
+#include <stdio.h>
+
+int main()
+{
+    int edad, numeroDeSuerte;
+    printf("Escribe tu edad: ");
+    scanf("%d", &edad);
+    printf("Escribe tu número de la suerte: ");
+    scanf("%d", &numeroDeSuerte);
+    
+    printf("Eres muy joven a tus apenas %d años.\n", edad);
+    printf("El %d es un número suertudo.\n", numeroDeSuerte);
+    return 0;
+}
+
+//apartado 2
+
+#include <stdio.h>
+
+int main()
+{
+    float temp, form=0;
+    printf("ingrese una temperatura en Fahrenheit: ");
+    scanf("%f", &temp);
+    form=(temp-32)*5/9;
+    printf("La temperatura convertida a Celsius es de: %.2f ", form);
+    return 0;
+}
+
+//apartado 3
+
+#include <stdio.h>
+
+int main()
+{
+    float largo, ancho, altura, form=0;
+    printf("Vamos a sacar el volumen de un prisma rectangular\n");
+    printf("Ingrese el largo del prisma: ");
+    scanf("%f", &largo);
+    printf("Ingrese el ancho del prisma: ");
+    scanf("%f", &ancho);
+    printf("Ingrese la altura del prisma: ");
+    scanf("%f", &altura);
+    form=(largo*ancho*altura);
+    printf("El volumen del prisma rectangular es de: %.2f ", form);
+    return 0;
+}
+
+//apartado 4
+
+#include <stdio.h>
+
+int main()
+{
+    float lado, form=0;
+    printf("Vamos a sacar el perimetro de un pentagono\n");
+    printf("Ingrese un lado del pentagono: ");
+    scanf("%f", &lado);
+    form=(lado*5);
+    printf("El perimetro del pentagono es de: %.2f ", form);
+    return 0;
+}
+
+//apartado 5
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    float A, B, C, form=0;
+    printf("Vamos a encontrar el lado de un trinagulo a partir de sus dos lados conocidos y su angulo\n");
+    printf("Ingrese el primer lado: ");
+    scanf("%f", &A);
+    printf("Ingrese el segundo lado: ");
+    scanf("%f", &B);
+    printf("Ingrese el angulo: ");
+    scanf("%f", &C);
+    form=sqrt((A*A)+(B*B)-(2*A*B*cos(C)));
+    printf("El lado del triangulo es de: %.2f ", form);
+    return 0;
+}
